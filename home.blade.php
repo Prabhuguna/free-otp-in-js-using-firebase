@@ -28,7 +28,7 @@
                     </script>
                     <script type="text/javascript"> 
                     function myFunction() { 
-                        var mobile = $("#verificationcode").val();//
+                        var mobile = $("#mobile").val();//
                         window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container'); 
                         firebase.auth().signInWithPhoneNumber(mobile, window.recaptchaVerifier) 
                         .then(function(confirmationResult) { 
